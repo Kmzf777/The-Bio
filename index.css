@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: initial;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    font-family: Kanit, sans-serif;
+}
+
+:root {
+    --light1:rgb(235, 235, 235);
+    --light2:rgb(245, 245, 245);
+    --light3:rgb(255, 255, 255);
+    --fontcolor1: rgba(0, 0, 0, 0.9);
+    --fontcolor2: rgba(0, 0, 0, 0.7);
+    --fontcolor3: rgba(0, 0, 0, 0.5);
+    --bluelight: #a2d6f9;
+    --bluemedium: #1e96fc;
+    --bluedark: #072ac8;
+    --yellow:#fcf300;
+    --yellowdark: #ffc600;
+}
+
+body {
+    background: var(--light1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+header {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    margin-top: 2.5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-pc {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--light2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 3vh 2vw;
+    border-radius: 55px;
+}
+
+.nav-buttons {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-buttons a {
+    width: 45%;
+    text-align: center;
+    font-size: 1.2vw;
+    color: var(--fontcolor1);
+    font-weight: 500;
+}
+
+.nav-buttons a:hover {
+    color: var(--bluemedium);
+    letter-spacing: 2px;
+    transform: scale(1.01);
+    transition: 0.3s ease all;
+}
+
+.singup {
+    background: var(--bluemedium);
+    color: var(--light3);
+    padding: 1vh 0vw;
+    font-size: 1.2vw;
+    border-radius: 35px;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease all;
+    width: 45%;
+    border: 2px solid var(--bluemedium);
+}
+
+.singup:hover {
+    background: transparent;
+    color: var(--fontcolor1);
+    cursor: pointer;
+}
+
+.login {
+    background: transparent;
+    color: var(--fontcolor1);
+    padding: 1vh 2vw;
+    font-size: 1.2vw;
+    border-radius: 35px;
+    width: 45%;
+    border: 2px solid transparent;
+    transition: 0.3s ease all;
+    font-weight: 500;
+}
+
+.login:hover {
+    border: 2px solid var(--bluemedium);
+    cursor: pointer;
+}
+
+.logo {
+    background: transparent;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.logo button {
+    background: transparent;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--fontcolor1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+.principal-text {
+    width: 88vw;
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.principal-text h1 {
+    font-size: 6.8vw;
+    width: 50%;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 15vh;
+    color: var(--fontcolor1);
+}
+
+.principal-text span {
+    color: var(--bluedark);
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.bio-examples {
+    width: 45%;
+    background: saddlebrown;
+    height: 100%;
+}
