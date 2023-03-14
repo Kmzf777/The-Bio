@@ -1,0 +1,349 @@
+.nav-pc {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--light2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 3vh 2vw;
+    border-radius: 55px;
+}
+
+.nav-buttons {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-buttons a {
+    width: 45%;
+    text-align: center;
+    font-size: 1.2vw;
+    color: var(--fontcolor1);
+    font-weight: 500;
+}
+
+.nav-buttons a:hover {
+    color: var(--bluemedium);
+    letter-spacing: 2px;
+    transform: scale(1.01);
+    transition: 0.3s ease all;
+}
+
+.singup {
+    background: var(--bluemedium);
+    color: var(--light3);
+    padding: 1vh 0vw;
+    font-size: 1.2vw;
+    border-radius: 35px;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease all;
+    width: 45%;
+    border: 2px solid var(--bluemedium);
+}
+
+.singup:hover {
+    background: transparent;
+    color: var(--fontcolor1);
+    cursor: pointer;
+}
+
+.login {
+    background: transparent;
+    color: var(--fontcolor1);
+    padding: 1vh 2vw;
+    font-size: 1.2vw;
+    border-radius: 35px;
+    width: 45%;
+    border: 2px solid transparent;
+    transition: 0.3s ease all;
+    font-weight: 500;
+}
+
+.login:hover {
+    border: 2px solid var(--bluemedium);
+    cursor: pointer;
+}
+
+.logo {
+    background: transparent;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.logo button {
+    background: transparent;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--fontcolor1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile*/
+
+.nav-mobile {
+    width: 90vw;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--light2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 3vh 2vw;
+    border-radius: 55px;
+    transition: 0.3s ease all;
+    z-index: 999;
+}
+
+.logo-mobile {
+    background: transparent;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.logo-mobile button {
+    background: transparent;
+    font-size: 2.5vw;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--fontcolor1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-buttons-mobile {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.singup-mobile {
+    background: var(--bluemedium);
+    color: var(--light3);
+    padding: 1vh 0vw;
+    font-size: 2.5vw;
+    border-radius: 35px;
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease all;
+    width: 45%;
+    border: 2px solid var(--bluemedium);
+}
+
+
+.login-mobile {
+    background: transparent;
+    color: var(--fontcolor1);
+    padding: 1vh 2vw;
+    font-size: 2.5vw;
+    border-radius: 35px;
+    width: 45%;
+    border: 2px solid transparent;
+    transition: 0.3s ease all;
+    font-weight: 500;
+}
+
+
+.nav-menu {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-check {
+    display: none;
+}
+
+.menu-hamburguer {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+}
+
+.menu-hamburguer span {
+    background: var(--fontcolor1);
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s ease all;
+}
+
+.menu-hamburguer span::before {
+    content: '';
+    position: absolute;
+    background: var(--fontcolor1);
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 10px;
+    margin-top: -0.5rem;
+    transition: 0.3s ease all;
+}
+
+.menu-hamburguer span::after {
+    content: '';
+    position: absolute;
+    background: var(--fontcolor1);
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    transition: 0.3s ease all;
+}
+
+.menu-check:checked ~ .menu-hamburguer span {
+    transform: rotate(45deg);
+}
+
+.menu-check:checked ~ .menu-hamburguer span::before {
+    transform: rotate(0deg);
+    margin-top: 0rem;
+}
+
+.menu-check:checked ~ .menu-hamburguer span::after {
+    transform: rotate(-85deg);
+    margin-top: 0rem;
+}
+
+
+
+.menu-box {
+    width: 90vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--light2);
+    
+    padding: 0vh 2vw;
+    border-radius: 35px;
+    z-index: -1;
+    position: fixed;
+    height: 0vh;
+    margin-top: 3vh;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+
+.menu-check:checked ~ .menu-box {
+    height: 90vh;
+    display: flex;
+    opacity: 1;
+}
+
+.menu-box button {
+    margin-top: 5vh;
+    font-size: 3.5vw;
+    width: 50%;
+    border: 3px solid var(--fontcolor1);
+    padding: 1vh 0vw;
+    border-radius: 45px;
+    font-weight: 500;
+    color: var(--fontcolor1);
+}
+
+.menu-box button:first-child {
+    border: 3px solid var(--bluemedium);
+    color: var(--light3);
+    background: var(--bluemedium);
+}
+
+.menu-box button:nth-child(2) {
+    border: 3px solid var(--fontcolor1);
+    color: var(--light3);
+    background: var(--fontcolor1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive Area*/
+
+@media screen and (max-width:800px) {
+    .nav-pc {
+        display: none;
+    }
+    .nav-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo-mobile {
+        width: 40%;
+    }
+    .logo-mobile button {
+        font-size: 4.5vw;
+    }
+
+    .nav-buttons-mobile {
+        width: 40%;
+    }
+
+    .nav-menu {
+        width: 20%;
+    }
+    .menu-hamburguer {
+        width: 100%;
+    }
+
+    .singup-mobile {
+        font-size: 3.5vw;
+    }
+    
+    .login-mobile {
+        font-size: 3.5vw;
+    }
+
+    .menu-box button {
+        font-size: 5vw;
+        width: 80%;
+    }
+}
