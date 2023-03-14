@@ -13,8 +13,8 @@
 }
 
 :root {
-    --light1:rgb(235, 235, 235);
-    --light2:rgb(245, 245, 245);
+    --light1:rgb(205, 205, 205);
+    --light2:rgb(235, 235, 235);
     --light3:rgb(255, 255, 255);
     --fontcolor1: rgba(0, 0, 0, 0.9);
     --fontcolor2: rgba(0, 0, 0, 0.7);
@@ -149,7 +149,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .text-right h1 {
@@ -158,7 +158,7 @@ header {
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
-    line-height: 15vh;
+    line-height: 7.5vw;
     color: var(--fontcolor1);
     cursor: default;
 }
@@ -236,4 +236,61 @@ header {
         margin-top: 0vh;
     }
     
+}
+
+.input-box {
+    display: flex;
+    position: relative;
+    border: 2px solid var(--bluemedium);
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    transition: 0.3s ease all;
+}
+
+.input-box:hover {
+    border: 2px solid var(--bluedark);
+}
+
+.text-input h2 {
+    font-size: 1.3vw;
+    font-weight: 400;
+    padding-left: 1vw;
+}
+
+.input-box input {
+    background: transparent;
+    font-size: 1.3vw;
+    width: 12vw;
+}
+
+.input-box .link {
+    background: var(--bluemedium);
+    background-repeat: repeat;
+    padding: 1vh 1vw;
+    font-size: 1.4vw;
+    color: var(--light3);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    transition: 0.3s ease all;
+}
+
+.input-box:hover .link {
+    background: var(--bluedark);
+    cursor: pointer;
+}
+
+.error-text {
+    margin-top: 0.2vh;
+    margin-left: 6vw;
+    position: relative;
+    height: 0vh;
+}
+
+.error-text h2 {
+    color: red;
+    font-weight: 300;
+    font-size: 1vw;
+    position: relative;
 }
