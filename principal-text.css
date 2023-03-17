@@ -164,8 +164,19 @@
 }
 
 
+.under-text {
+    margin-top: 4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 
-
+.under-text h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: var(--fontcolor3);
+}
 
 
 
@@ -260,15 +271,21 @@
         font-size: 3vw;
     }
 
+    .under-text h2 {
+        font-size: 4vw;
+        font-weight: 400;
+        color: var(--fontcolor3);
+    }
+
     .bio-examples {
-        width: 65vw;
-        height: 60vw;
+        width: 80vw;
+        height: 70vw;
         margin-top: 15vh;
     }
 
     .bio-box:nth-child(1) {
-        width: 36vw;
-        height: 49vw;
+        width: 46vw;
+        height: 59vw;
         background: var(--light3);
         border-radius: 25px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
@@ -279,8 +296,8 @@
     }
     
     .bio-box:nth-child(2) {
-        width: 36vw;
-        height: 49vw;
+        width: 46vw;
+        height: 59vw;
         top: 0;
         left: 0;
         background: var(--light3);
