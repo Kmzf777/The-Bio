@@ -1,0 +1,66 @@
+.some-bios {
+    width: 82vw;
+    padding: 1vh 1vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.some-bios h2 {
+    font-size: 3.8vw;
+    font-weight: 500;
+    color: var(--fontcolor1);
+}
+
+.bio-overflow {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.bio-example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 2vw;
+    transition: 0.5s ease all;
+}
+
+.bio-example:hover {
+    background: var(--bluemedium);
+}
+
+.bio-example h2 {
+    font-size: 1.5vw;
+    color: var(--fontcolor1);
+}
+
+.bio-example:hover h2 {
+    color: var(--light3);
+    transition: 0.5s ease all;
+}
+
+.bio-example img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    background: var(--bluemedium);
+}
+
+.bio-example a {
+    font-size: 1vw;
+    color: var(--fontcolor2);
+    transition: 0.5s ease all;
+}
+
+.bio-example:hover a {
+    color: var(--light1);
+}
