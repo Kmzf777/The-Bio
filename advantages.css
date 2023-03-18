@@ -149,7 +149,7 @@
 
 .how-work-box img {
     width: 100%;
-    height: 28vh;
+    height: 13vw;
     margin-top: 2vh;
     border-radius: 25px;
 }
@@ -195,7 +195,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*Responsive Area*/
+
+
+
+
+
+
+
 
 
 
@@ -206,6 +225,9 @@
         width: 90%;
         flex-wrap: wrap;
         border-radius: 35px;
+        background: transparent;
+        box-shadow: none;
+        margin-top: none;
     }
 
     .advantage-info {
@@ -217,6 +239,76 @@
     
     .advantage-info h2 {
         font-size: 3.5vw;
+    }
+    
+    .advantage-info i {
+        font-size: 3.5vw;
+        margin-right: 2vw;
+    }
+
+    .how-work {
+        margin-top: 2vh;
+    }
+    
+    .work-tittle {
+        width: 95%;
+        margin-bottom: 2vh;
+        font-size: 5.4vw;
+    }
+
+    .work-tittle::before {
+        content: '';
+        position: absolute;
+        height: 0.7vw;
+        width: 98%;
+    }
+    
+    .inner-how-work {
+        padding: 6vh 1.5vw;
+        flex-direction: column;
+    }
+
+    .how-work-box {
+        width: 90%;
+        margin-top: 5vh;
+    }
+
+    .how-work-box h2 {
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    
+    .how-work-box img {
+        width: 100%;
+        height: 38vw;
+        margin-top: 5vh;
+    }
+    
+    .how-work-box p {
+        font-size: 2.2vw;
+        margin-top: 4vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+
+    .advantage-info {
+        padding: 1vh 3.5vw;
+        margin-top: 3vh;
+        border-radius: 45px;
+    }
+
+    
+    .advantage-info h2 {
+        font-size: 4vw;
     }
     
     .advantage-info i {
@@ -249,18 +341,20 @@
     }
 
     .how-work-box h2 {
-        font-size: 5vw;
-        font-weight: 600;
+        font-size: 8vw;
+        font-weight: 500;
+        line-height: 7vw;
+        text-align: center;
     }
     
     .how-work-box img {
         width: 100%;
-        height: 38vh;
+        height: 38vw;
         margin-top: 5vh;
     }
     
     .how-work-box p {
-        font-size: 2.2vw;
+        font-size: 4vw;
         margin-top: 4vh;
     }
     

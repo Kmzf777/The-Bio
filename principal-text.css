@@ -281,6 +281,7 @@
         width: 80vw;
         height: 70vw;
         margin-top: 15vh;
+        display: none;
     }
 
     .bio-box:nth-child(1) {

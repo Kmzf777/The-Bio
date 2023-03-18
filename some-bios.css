@@ -66,11 +66,33 @@
 }
 
 
+
+
+
+
+
+/*Responsive area*/
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:800px) {
+    .some-bios h2 {
+        font-size: 6.5vw;
+        font-weight: 500;
+        color: var(--fontcolor1);
+        text-align: center;
+    }
+
     .bio-overflow {
         margin-top: 5vh;
         overflow-x: scroll;
-        padding: 4vh 0vw;
+        padding: 4vh 4vw;
     }
 
     .bio-overflow::-webkit-scrollbar {
@@ -98,5 +120,37 @@
 
     .bio-example a {
         font-size: 2vw;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .bio-example {
+        min-width: 40vw;
+        margin-right: 4vw;
+        cursor: default;
+    }
+
+    .bio-example:first-child {
+        margin-left: 2vw;
+    }
+
+    .bio-example img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .bio-example h2 {
+        font-size: 6vw;
+        color: var(--fontcolor1);
+    }
+
+    .bio-example a {
+        font-size: 3vw;
     }
 }
