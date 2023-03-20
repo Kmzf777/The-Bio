@@ -119,3 +119,402 @@
     font-style: italic;
     text-decoration: underline;
 }
+
+.config-area {
+    width: 50vw;
+    display: flex;
+    background: var(--light3);
+    margin-top: 5vh;
+    border-radius: 35px;
+    padding: 2vw 2vw;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.user-config {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.user-img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img button {
+    width: 10vw;
+    height: 10vw;
+    border: 3px dashed var(--fontcolor2);
+    border-radius: 100px;
+    font-size: 3vw;
+    color: var(--fontcolor2);
+    transition: 0.3s ease all;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+    background: var(--light2);
+}
+
+.user-img button:hover {
+    border: 3px dashed var(--bluedark);
+    color: var(--bluedark);
+    cursor: pointer;
+}
+
+.user-input {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    height: 10vw;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.user-input input {
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 1.5vh 1vw;
+    border-bottom: 2px solid var(--bluemedium);
+    position: relative;
+    transition: 0.3s ease all;
+}
+
+.user-input input:focus {
+    border-bottom: 2px solid var(--bluedark);
+}
+
+
+
+
+
+
+
+
+
+
+.create-link {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.create-link h2 {
+    color: var(--fontcolor1);
+    font-style: normal;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+
+.create-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.create-box input {
+    padding: 1vh 1.5vw;
+    font-size: 1.5vw;
+    color: var(--fontcolor1);
+    width: 92%;
+    border: 2px solid var(--fontcolor3);
+}
+
+.create-box input:last-child {
+    border-top: none;
+}
+
+.add-more {
+    width: 50%;
+    font-size: 1.5vw;
+    background: transparent;
+    text-align: start;
+    padding: 1vh 0vw;
+    margin-top: 1vh;
+    transition: 0.3s ease all;
+}
+
+.add-more:hover {
+    color: var(--bluedark);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.personalizar {
+    width: 100%;
+    margin-top: 4vh;
+    background: var(--bluemedium);
+    color: var(--light3);
+    font-size: 2vw;
+    padding: 1.5vh 0vw;
+    border-radius: 100px;
+    border: 3px solid var(--bluemedium);
+    transition: 0.3s ease all;
+}
+
+
+.personalizar:hover {
+    letter-spacing: 5px;
+    background: transparent;
+    border: 3px solid var(--bluemedium);
+    color: var(--bluemedium);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .config-bio {
+        margin-top: 20vh;
+    }
+   
+    .config-bio h1 {
+        font-size: 14vw;
+        line-height: 13vw;
+        text-align: center;
+    }
+    
+    .config-bio h2 {
+        font-size: 3vw;
+        margin-top: 1.5vh;
+    }
+
+    .config-area {
+        width: 86vw;
+        margin-top: 5vh;
+        padding: 4vw 2vw;
+        margin-bottom: 5vh;
+    }
+    
+
+    
+    .user-img button {
+        width: 20vw;
+        height: 20vw;
+        font-size: 5vw;
+    }
+
+
+    .user-input {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        height: 20vw;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .user-input input {
+        width: 100%;
+        font-size: 2.5vw;
+        padding: 1.5vh 1vw;
+    }
+
+
+
+
+    .create-link h2 {
+        font-size: 5vw;
+    }
+    
+    
+    .create-box {
+        margin-top: 2vh;
+    }
+    
+    .create-box input {
+        padding: 1vh 1.5vw;
+        font-size: 2.5vw;
+    }
+    
+
+    .add-more {
+        font-size: 2.5vw;
+    }
+    
+    .add-more:hover {
+        color: var(--bluedark);
+        cursor: default;
+        text-decoration: underline;
+    }
+    
+
+    .personalizar {
+        font-size: 4vw;
+    }
+
+    .personalizar:hover {
+        cursor: default;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .config-bio {
+        margin-top: 18vh;
+    }
+   
+    .config-bio h1 {
+        font-size: 14.5vw;
+    }
+    
+    .config-bio h2 {
+        font-size: 3.8vw;
+        margin-top: 1.5vh;
+    }
+
+    .config-area {
+        width: 86vw;
+        margin-top: 5vh;
+        padding: 4vw 2vw;
+        margin-bottom: 5vh;
+    }
+    
+    .user-config {
+        width: 90%;
+    }
+
+    .user-img {
+        width: 40%;
+    }
+    
+    .user-img button {
+        width: 25vw;
+        height: 25vw;
+        font-size: 7vw;
+    }
+
+
+    .user-input {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        height: 25vw;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .user-input input {
+        width: 100%;
+        font-size: 4vw;
+        padding: 1.5vh 1vw;
+    }
+
+    .create-link {
+        margin-top: 2vh;
+    }
+
+    .create-link h2 {
+        font-size: 7vw;
+    }
+    
+    
+    .create-box {
+        margin-top: 3vh;
+    }
+    
+    .create-box input {
+        padding: 1vh 1.5vw;
+        font-size: 4vw;
+    }
+    
+
+    .add-more {
+        font-size: 4.5vw;
+        width: 100%;
+    }
+    
+
+    .personalizar {
+        font-size: 6.5vw;
+        margin-top: 4vh;
+    }
+
+
+}
