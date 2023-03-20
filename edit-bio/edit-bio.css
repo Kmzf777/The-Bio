@@ -1,0 +1,86 @@
+:root {
+    --light1:rgb(215, 215, 215);
+    --light2:rgb(235, 235, 235);
+    --light3:rgb(255, 255, 255);
+    --fontcolor1: rgba(0, 0, 0, 0.9);
+    --fontcolor2: rgba(0, 0, 0, 0.7);
+    --fontcolor3: rgba(0, 0, 0, 0.5);
+    --bluelight: #a2d6f9;
+    --bluemedium: #1e96fc;
+    --bluedark: #072ac8;
+    --yellow:#fcf300;
+    --yellowdark: #ffc600;
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: initial;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    font-family: Kanit, sans-serif;
+}
+
+
+body {
+    background: var(--light1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 97vh;
+    position: relative;
+}
+
+
+.background-bio {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(45deg,var(--bluemedium),var(--bluedark));
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.personalizar {
+    background: var(--light3);
+    padding: 0.8vw 0.8vw;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    transition: 0.2s ease all;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.personalizar:hover {
+    color: var(--bluemedium);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.bio-user {
+    width: 48vw;
+    background: var(--light3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    z-index: 999;
+    position: relative;
+    border-radius: 35px;
+}   
+
