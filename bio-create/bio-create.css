@@ -1,0 +1,121 @@
+.nav-buttons {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-buttons2 {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.logo {
+    background: transparent;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.logo button img {
+    width: 60%;
+}
+
+.nav-buttons2 img {
+    width: 3.5vw;
+    border-radius: 100px;
+    margin-left: 1vw;
+}
+
+.nav-buttons2 p {
+    font-size: 1.2vw;
+    color: var(--fontcolor1);
+    font-weight: 400;
+}
+
+
+
+
+
+/*mobile*/
+
+
+.logo-mobile button {
+    background: transparent;
+    cursor: pointer;
+}
+
+.logo-mobile img {
+    width: 60%;
+}
+
+.nav-buttons-mobile {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-buttons-mobile img {
+    width: 8vw;
+    border-radius: 200px;
+    margin-right: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.config-bio {
+    width: 88vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.config-bio h1 {
+    font-size: 7vw;
+    font-style: italic;
+    color: var(--fontcolor1);
+    transition: 0.3s ease all;
+    cursor: default;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.config-bio h1 span {
+    color: var(--bluedark);
+    font-style: italic;
+}
+
+.config-bio h2 {
+    font-size: 1.5vw;
+    font-style: italic;
+    color: var(--fontcolor2);
+    cursor: default;
+    margin-top: -2vh;
+    font-weight: 500;
+}
+
+.config-bio h2 span {
+    color: var(--bluemedium);
+    font-style: italic;
+    text-decoration: underline;
+}
