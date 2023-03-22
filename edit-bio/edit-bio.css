@@ -140,3 +140,30 @@ body {
     color: var(--fontcolor1);
 }
 
+
+.buttons-area {
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.default-button {
+    width: 90%;
+    border-radius: 50px;
+    padding: 2vh 2vw;
+    margin-top: 2vh;
+    display: flex;
+    background: transparent;
+    border: 2px solid var(--fontcolor1);
+    align-items: center;
+}
+
+.left-button {
+    width: 5vw;
+
+    font-size: 2vw;
+}
