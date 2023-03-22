@@ -65,6 +65,16 @@ body {
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.personalizar-user {
+    left: 0;
+    right: auto;
+}
+
+.personalizar-social {
+    margin-top: -1.5vw;
+    margin-right: 0vw;
+}
+
 .personalizar:hover {
     color: var(--bluemedium);
     transform: scale(1.1);
@@ -82,5 +92,51 @@ body {
     z-index: 999;
     position: relative;
     border-radius: 35px;
+    padding: 4vh 2vw;
 }   
+
+.user-edit {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.user-edit img {
+    border-radius: 100%;
+    width: 10vw;
+}
+
+.user-edit h2 {
+    font-size: 2vw;
+    margin-top: 2vh;
+    color: var(--fontcolor1);
+    font-weight: 600;
+}
+
+.user-edit p {
+    font-size: 1vw;
+    margin-top: 1vh;
+    color: var(--fontcolor2);
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.social-area {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.social-area .social-btt {
+    background: transparent;
+    font-size: 2.5vw;
+    color: var(--fontcolor1);
+}
 
