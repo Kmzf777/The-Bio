@@ -369,6 +369,8 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 35px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
     background: linear-gradient(45deg,var(--bluemedium),var(--bluedark),var(--bluemedium),var(--bluedark));
     z-index: 1;
     top: 0;
@@ -376,6 +378,93 @@ body {
     left: 0;
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    margin-top: 2vh;
 }
 
+
+.bio-example {
+    width: 75%;
+    border-radius: 35px;
+    background: var(--light3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2vh 1vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.bio-example img {
+    width: 8vw;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    width: 55%;
+    background: var(--fontcolor2);
+    height: 2vh;
+    margin-top: 2vh;
+    border-radius: 15px;
+}
+
+.desc {
+    width: 75%;
+    background: var(--fontcolor3);
+    height: 2vh;
+    margin-top: 1vh;
+    border-radius: 15px;
+}
+
+
+
+
+.social-example {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-example span {
+    width: 2vw;
+    height: 2vw;
+    background: var(--fontcolor3);
+    border-radius: 100px;
+    margin-top: 2vh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-example {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 3vh;
+    border: 2px solid var(--fontcolor1);
+    background: transparent;
+    justify-content: space-between;
+    padding: 1vh 1vw;
+    border-radius: 55px;
+    align-items: center;
+    
+}
+
+.btt-example-left {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50px;
+    background: var(--fontcolor3);
+}
+
+.btt-example-right {
+    width: 80%;
+    height: 1.5vh;
+    background: var(--fontcolor2);
+    border-radius: 15px;
+}
