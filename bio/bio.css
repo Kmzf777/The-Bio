@@ -1,0 +1,227 @@
+:root {
+    --light1:rgb(215, 215, 215);
+    --light2:rgb(235, 235, 235);
+    --light3:rgb(255, 255, 255);
+    --fontcolor1: rgba(0, 0, 0, 0.9);
+    --fontcolor2: rgba(0, 0, 0, 0.7);
+    --fontcolor3: rgba(0, 0, 0, 0.5);
+    --bluelight: #a2d6f9;
+    --bluemedium: #1e96fc;
+    --bluedark: #072ac8;
+    --yellow:#fcf300;
+    --yellowdark: #ffc600;
+}
+
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-style: initial;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+    font-family: Kanit, sans-serif;
+    
+}
+
+
+body {
+    background: var(--light1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 97vh;
+    position: relative;
+}
+
+
+.background-bio {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(45deg,var(--bluemedium),var(--bluedark),var(--bluemedium),var(--bluedark));
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    background-repeat: no-repeat;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.bio-user {
+    width: 48vw;
+    background: var(--light3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    z-index: 999;
+    position: relative;
+    border-radius: 35px;
+    padding: 5vh 2vw;
+}   
+
+.user-edit {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.user-edit img {
+    border-radius: 200px;
+    width: 10vw;
+}
+
+.user-edit h2 {
+    font-size: 2vw;
+    margin-top: 2vh;
+    color: var(--fontcolor1);
+    font-weight: 600;
+}
+
+.user-edit p {
+    font-size: 1vw;
+    margin-top: 1vh;
+    color: var(--fontcolor2);
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.social-area {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.social-area .social-btt {
+    background: transparent;
+    font-size: 2.5vw;
+    color: var(--fontcolor1);
+    transition: 0.3s ease all;
+}
+
+.social-area .social-btt:hover {
+    transform: translateY(-0.5vh);
+    cursor: pointer;
+    color: var(--bluemedium);
+}
+
+.buttons-area {
+    width: 100%;
+    margin-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.default-button {
+    width: 90%;
+    border-radius: 50px;
+    padding: 2vh 2vw;
+    margin-top: 4vh;
+    display: flex;
+    background: transparent;
+    border: 2px solid var(--fontcolor1);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    transition: 0.3s ease all;
+}
+
+
+
+.left-button {
+    width: 8%;
+    font-size: 2vw;
+
+    text-align: center;
+}
+
+.mid-button {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.right-bio {
+    width: 8%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    text-align: center;
+}
+
+
+.default-button:hover {
+    color: var(--light3);
+    background: var(--bluemedium);
+    border: 2px solid var(--bluemedium);
+    cursor: pointer;
+}
+
+
+
+.thebio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    z-index: 899;
+    margin-bottom: 5vh;
+}
+
+.thebio-info h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--light3);
+    opacity: 0.8;
+}
+
+.thebio-info h3 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--light3);
+    margin-top: 0.5vh;
+    opacity: 0.5;
+}
+
+
+
+
+
+
