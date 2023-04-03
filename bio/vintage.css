@@ -1,15 +1,14 @@
+
 :root {
-    --fontcolor1: rgba(57, 250, 208, 0.9);
-    --fontcolor2: rgba(134, 255, 225, 0.7);
+    --fontcolor1: #405857;
+    --fontcolor2: #2b6d6abb;
 }
-
-
 
 .background-bio {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background: rgb(255, 240, 192);
+    background: #f2dece;
     top: 0;
     bottom: 0;
     left: 0;
@@ -34,7 +33,7 @@
 
 
 .bio-user {
-    background: rgb(240, 83, 78);
+    background: #de6f4e;
       position: relative;
       backface-visibility: visible;
       box-shadow: 0 2px 25px #feda3711,
@@ -53,22 +52,23 @@
 .social-area .social-btt:hover {
     transform: translateY(-0.5vh);
     cursor: pointer;
-    color: black;
+    color: #03fff2;
 }
+
 
 
 .default-button {
-    border-radius: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    border: none;
+    width: 90%;
+    color: var(--fontcolor1);
+    border: 2px solid var(--fontcolor1);
 }
+
+
 
 
 
 .default-button:hover {
-    color: rgba(0, 0, 0, 1);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    transform: scale(1.02);
+    color: white;
+    background: var(--fontcolor1);
+    border: 2px solid var(--fontcolor1);
 }

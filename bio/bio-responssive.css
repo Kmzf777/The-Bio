@@ -1,0 +1,62 @@
+@media screen and (max-width: 800px) {
+
+
+    .bio-user {
+        width: 85vw;
+        margin-top: 8vh;
+        z-index: 999;
+        position: relative;
+        border-radius: 30px;
+        padding: 5vh 2vw;
+    }   
+
+    .user-edit img {
+        width: 25vw;
+    }
+
+    .user-edit h2 {
+        font-size: 6vw;
+        margin-top: 2vh;
+    }
+    
+    .user-edit p {
+        font-size: 3.2vw;
+        margin-top: 1vh;
+    }
+
+    .social-area .social-btt {
+        background: transparent;
+        font-size: 6vw;
+    }
+
+    .left-button {
+        width: 10%;
+        font-size: 5vw;
+    
+        text-align: center;
+    }
+    
+    .mid-button {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        font-size: 3.5vw;
+        font-weight: 600;
+        justify-content: center;
+    }
+    
+    .right-bio {
+        width: 10%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vw;
+        text-align: center;
+    }
+    
+    
+
+
+
+}
