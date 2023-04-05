@@ -98,7 +98,23 @@ header {
     border: 3px solid var(--bluemedium);
     padding: 1.5vh 0vw;
     font-weight: 600;
+    transition: 0.3s ease all;
 }
+
+
+.top-buttons button:first-child:hover {
+    background: transparent;
+    border: 3px solid var(--bluemedium);
+    color: var(--fontcolor1);
+    cursor: pointer;
+}
+
+.top-buttons button:last-child:hover {
+    background: var(--bluemedium);
+    color: white;
+    cursor: pointer;
+}
+
 
 .top-buttons button:first-child {
     background: var(--bluemedium);
