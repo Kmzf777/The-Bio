@@ -24,20 +24,25 @@
 
     .personalization-left {
         width: 90vw;
-        margin-top: 2vh;
         height: min-content;
-        max-height: 70vh;
+        height: 70vh;
         justify-content: flex-start;
-    
+        position: relative;
     }
     
     .personalization-left h2 {
         font-size: 2.5vw;
+
+    }
+
+    #result-bio {
+        margin-top: 28vh;
     }
 
     .result-bio {
         height: 100vh;
         overflow-y: inherit;
+        
     }
 
     .bio-example {
@@ -159,6 +164,36 @@
         background: transparent;
         border-radius: 100px;
         margin-top: 2vh;
+    }
+
+
+
+    .button-edit h2 {
+        font-size: 4.5vw;
+    }
+    
+    .button-edit h3 {
+        font-size: 3vw;
+
+    }
+    
+    .button-edit input {
+
+        font-size: 3.2vw;
+        padding: 1vh 2vw;
+    }
+    
+    #input-img {
+        display: none;
+    }
+    
+    .button-edit label {
+        font-size: 3vw;
+    
+    }
+    
+    .button-edit select {
+        font-size: 3vw;
     }
     
 }

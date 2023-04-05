@@ -17,10 +17,19 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link rel="stylesheet" href="bio-dashboard.css">
     <title>The Bio - Dashboard</title>
+    
   </head>
 <body>
     <nav class="menu-bio">
         <button><img src="/logo_the_bio_black_version.png" alt=""></button>
+
+        <div class="user-area">
+            <img src="/bio-create/user.png" alt="">
+            <div class="user-logout">
+                <h2>Name</h2>
+                <button>Log Out</button>
+            </div>
+        </div>
     </nav>
 
     <section class="top-area">
@@ -155,62 +164,55 @@
         </main>
 
 
-        <main class="">
-            <div id="myfirstchart"></div>
+        <main class="charts-area">
+            <div class="chart-box">
+                <h2>Visitas na Bio</h2>
+                <div id="chart_div"></div>
+            </div>
+
         </main>
 
 
 
     </section>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-    <script src="charts.js"></script>
-    <script>
-        var data = [
-      { y: '2014', a: 50, b: 90},
-      { y: '2015', a: 65,  b: 75},
-      { y: '2016', a: 50,  b: 50},
-      { y: '2017', a: 75,  b: 60},
-      { y: '2018', a: 80,  b: 65},
-      { y: '2019', a: 90,  b: 70},
-      { y: '2020', a: 100, b: 75},
-      { y: '2021', a: 115, b: 75},
-      { y: '2022', a: 120, b: 85},
-      { y: '2023', a: 145, b: 85},
-      { y: '2024', a: 160, b: 95}
-    ],
-    config = {
-      data: data,
-      xkey: 'y',
-      ykeys: ['a', 'b'],
-      labels: ['Total Income', 'Total Outcome'],
-      fillOpacity: 0.6,
-      hideHover: 'auto',
-      behaveLikeLine: true,
-      resize: true,
-      pointFillColors:['#ffffff'],
-      pointStrokeColors: ['black'],
-      lineColors:['gray','red']
-  };
-config.element = 'area-chart';
-Morris.Area(config);
-config.element = 'line-chart';
-Morris.Line(config);
-config.element = 'bar-chart';
-Morris.Bar(config);
-config.element = 'stacked';
-config.stacked = true;
-Morris.Bar(config);
-Morris.Donut({
-  element: 'pie-chart',
-  data: [
-    {label: "Friends", value: 30},
-    {label: "Allies", value: 15},
-    {label: "Enemies", value: 45},
-    {label: "Neutral", value: 10}
-  ]
-});
-    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        // Load the Visualization API and the corechart package.
+        google.charts.load('current', {'packages':['corechart']});
+  
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawChart);
+  
+        // Callback that creates and populates a data table,
+        // instantiates the pie chart, passes in the data and
+        // draws it.
+        function drawChart() {
+  
+          // Create the data table.
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Topping');
+          data.addColumn('number', 'Slices');
+          data.addRows([
+            ['Norte', 3],
+            ['Nordeste', 1],
+            ['Centro Oeste', 1],
+            ['Sudeste', 1],
+            ['Sul', 1]
+          ]);
+  
+          // Set chart options
+          var options = {
+            'legend':'bottom',
+            'title':'My Big Pie Chart',
+            'width':400,
+            'height':300
+            }
+  
+          // Instantiate and draw our chart, passing in some options.
+          var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+          chart.draw(data, options);
+        }
+      </script>
 </body>

@@ -160,8 +160,15 @@ body {
 .left-button {
     width: 8%;
     font-size: 2vw;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.left-button img {
+    width: 100%;
+    border-radius: 100%;
 }
 
 .mid-button {
