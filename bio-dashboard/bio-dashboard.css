@@ -176,126 +176,278 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-
-.links {
-    width: 40%;
+.theme-search {
+    width: 56%;
+    background: var(--light3);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: 60vh;
-    background: var(--light2);
-    border-radius: 35px;
+    justify-content: space-between;
     padding: 2vh 2vw;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 200px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.add-link {
-    width: 90%;
-    background: var(--bluemedium);
-    border-radius: 200px;
-    padding: 1.5vh 0vw;
+.theme-search input {
+    font-size: 1.1vw;
+    width: 80%;
+}
+
+.theme-search button {
     font-size: 1.5vw;
-    color: white;
-    font-weight: 600;
-    margin-top: 2vh;
-    border: 3px solid var(--bluemedium);
+    background: transparent;
+    opacity: 0.5;
     transition: 0.3s ease all;
 }
 
-.add-link:hover {
-    width: 90%;
-    background: transparent;
-    border: 3px solid var(--bluemedium);
-    color: var(--fontcolor1);
-    cursor: pointer;
-}
 
-.link-flow {
-    overflow-y: scroll;
-    width: 80%;
+.bio-flow {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
     margin-top: 3vh;
-    height: 45vh;
-    padding: 2vh 2vw;
-    background: var(--light1);
+}
+
+.bio-box {
+    width: 48vw;
+    margin-top: 3.5vh;
+    padding: 4vh 3vw;
+    background: var(--light3);
     border-radius: 25px;
-    align-items: center;
-}
-
-.link-box {
-    width: 90%;
-    display: flex;
-    margin-top: 2vh;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid var(--light2);
-    padding: 1.5vh 1vw;
-}
-
-.link-box h2 {
-    color: var(--fontcolor1);
-    font-size: 1.5vw;
-    font-weight: 600;
-}
-
-.link-box h3 {
-    color: var(--fontcolor1);
-    font-size: 1.5vw;
-    font-weight: 500;
-}
-
-.link-box button {
-    background: transparent;
-    width: 10%;
-    font-size: 1.3vw;
-    color: var(--fontcolor1);
-}
-
-.link-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin-top: 4vh;
-}
-
-
-
-
-.charts-area {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 92%;
-    margin-top: 8vh;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.chart-box {
-    background: var(--light2);
-    padding: 2.5vh 2vw;
-    border-radius: 35px;
+
+
+.bio-left h2 {
+    font-size: 2vw;
+    color: var(--fontcolor1);
+    font-weight: 800;
+}
+
+.bio-left h3 {
+    font-size: 1vw;
+    color: var(--fontcolor3);
+    font-weight: 600;
+    margin-top: 1vh;
+}
+
+.bio-right {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    position: relative;
     justify-content: center;
 }
 
-.chart-box h2 {
-    font-size: 2vw;
+.bio-right .elipse {
+    font-size: 1.5vw;
     color: var(--fontcolor1);
-    font-weight: 600;
-    letter-spacing: 1px;
+    background: transparent;
+    width: 5vw;
+
+
+    padding: 2vh 0vw;
+    cursor: pointer;
 }
 
-#chart_div {
-    font-weight: 600;
+.bio-right:hover .menu-box {
+    display: flex;
+}
+
+.menu-box {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: var(--light3);
+    padding: 2vh 2vw;
+    margin-top: -1vh;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20vh;
+}
+
+.menu-box button {
+    background: transparent;
+    width: 100%;
+    font-size: 1.2vw;
+    margin-top: 1.2vh;
+    font-weight: 500;
+    transition: 0.3s ease all;
+}
+
+.menu-box button:hover {
+    color: var(--bluemedium);
+    cursor: pointer;
 }
 
 
 
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .menu-bio img {
+        width: 12.5vw;
+    }
+    .user-area img {
+        width: 5vw;
+        border-radius: 200px;
+    }
+
+    .user-area:hover .user-logout {
+        display: none;
+    }
+
+    .top-area {
+        margin-top: 2vh;
+    }
+
+    .top-area h1 {
+        font-size: 8.5vw;
+
+    }
+    
+    .top-buttons {
+        width: 90%;
+        margin-top: 4vh;
+    }
+
+    .top-buttons button {
+        font-size: 3vw;
+        padding: 2vh 0vw;
+    }
+
+    .theme-search {
+        width: 83%;
+        padding: 3vh 4vw;
+    }
+    
+    .theme-search input {
+        font-size: 2.1vw;
+    }
+
+    .theme-search button {
+        font-size: 2.5vw;
+    }
+    
+    .bio-box {
+        width: 78vw;
+    }
+
+    .bio-left h2 {
+        font-size: 3.8vw;
+    }
+    
+    .bio-left h3 {
+        font-size: 1.8vw;
+    }
+    
+    .bio-right .elipse {
+        font-size: 2.8vw;
+        width: 8vw;
+    }
+
+    .menu-box {
+        margin-top: 25vh;
+    }
+    .menu-box button {
+        background: transparent;
+        width: 100%;
+        font-size: 2.5vw;
+        margin-top: 2vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .menu-bio img {
+        width: 18.5vw;
+    }
+    .user-area img {
+        width: 8vw;
+        border-radius: 200px;
+    }
+
+    .top-area h1 {
+        font-size: 8.8vw;
+    }
+    
+    .top-buttons {
+        width: 90%;
+        margin-top: 2vh;
+    }
+
+    .top-buttons button {
+        font-size: 4vw;
+        padding: 2vh 0vw;
+    }
+
+    .theme-search {
+        width: 85%;
+        padding: 3vh 4vw;
+    }
+    
+    .theme-search input {
+        font-size: 3.5vw;
+    }
+
+    .theme-search button {
+        font-size: 3.5vw;
+    }
+
+    .bio-flow {
+        margin-top: 1vh;
+    }
+    
+    .bio-box {
+        width: 80vw;
+    }
+
+    .bio-left h2 {
+        font-size: 5.8vw;
+    }
+    
+    .bio-left h3 {
+        font-size: 2.8vw;
+    }
+    
+    .bio-right .elipse {
+        font-size: 5vw;
+        width: 8vw;
+    }
+
+    .menu-box {
+        margin-top: 28vh;
+    }
+    .menu-box button {
+        background: transparent;
+        width: 100%;
+        font-size: 4.5vw;
+        margin-top: 2vh;
+    }
+    
+}
